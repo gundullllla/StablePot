@@ -111,6 +111,7 @@ void loop() {
 }
 ```
 ### Advanced Configuration (STABLEPOT4)
+```
 #include <StablePot.h>
 
 StablePot fineTune(32, StablePot::STABLEPOT4);
