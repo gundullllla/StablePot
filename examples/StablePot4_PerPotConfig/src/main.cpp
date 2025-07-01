@@ -7,9 +7,10 @@ StablePot knob2(32, StablePot::STABLEPOT4);
 void setup() {
   Serial.begin(115200);
   
-  // Customize individually
-  knob1.configure(0.3f, 0.75f, 0.002f, 0.0007f, 150, 4);
-  knob2.configure(0.2f, 0.8f, 0.001f, 0.0005f, 100, 5);
+  // Customize individually - knob1 is set for maximizing stability, knob2 is set for quick response.
+  //alpha1,alpha2,threshold1,threshold2,filter_time_ms,rounding_strength
+  knob1.configure(0.2f, 0.5f, 0.0004f, 0.0029f, 122, 6); 
+  knob2.configure(0.2f, 0.8f, 0.001f, 0.0005f, 22, 6);
 }
 
 void loop() {
