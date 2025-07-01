@@ -10,6 +10,6 @@
   "headers": ["StablePot.h", "EMAFilter.h"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/StablePot.git"
+    "url": "https://github.com/gundullllla/StablePot.git"
   }
 }
