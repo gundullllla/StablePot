@@ -1,5 +1,6 @@
 # StablePot Library - Potentiometer Smoothing for ESP32
 ### 6 Distinct Smoothing Algorithms optimized for ESP32 ADCs ###
+The main objective of this repository was to provide an algorithm that processes the ADC data in such a way that the values remain stable once the potentiometer is set, while maintaining a high resolution.
 
 _Disclaimer: i don't know much about coding and made this library including documentation with the use of AI._
 
