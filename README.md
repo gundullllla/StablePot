@@ -109,7 +109,7 @@ void loop() {
   Serial.println(volume.getProcessedADC());
   delay(1);
 }
-
+```
 ### Advanced Configuration (STABLEPOT4)
 #include <StablePot.h>
 
