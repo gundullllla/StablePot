@@ -1,7 +1,7 @@
 # StablePot Library - Potentiometer Smoothing for ESP32
 ### 6 Distinct Smoothing Algorithms optimized for ESP32 ADCs ###
 
-_Disclaimer: i don't know much about coding and made this library with the use of AI._
+_Disclaimer: i don't know much about coding and made this library including documentation with the use of AI._
 
 ### Circuit Design
 
