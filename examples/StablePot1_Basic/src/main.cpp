@@ -5,6 +5,8 @@ StablePot knob(15, StablePot::STABLEPOT1);
 
 void setup() {
   Serial.begin(115200);
+    analogReadResolution(12);
+  analogSetAttenuation(ADC_11db);
 }
 
 void loop() {
