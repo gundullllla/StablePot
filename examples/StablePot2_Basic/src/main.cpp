@@ -1,9 +1,22 @@
-#include <iostream>
-#include "StablePot.h"
+// examples/StablePot1_Basic/src/main.cpp
+#include <StablePot.h>
 
-int main() {
-    StablePot pot;
-    pot.initialize(); // Example initialization
-    std::cout << "StablePot initialized successfully." << std::endl;
-    return 0;
+StablePot knob(15, StablePot::STABLEPOT2);
+
+void setup() {
+  Serial.begin(115200);
+    analogReadResolution(12);
+  analogSetAttenuation(ADC_11db);
+}
+
+void loop() {
+  knob.update();
+  
+  Serial.print(knob.getRawValue(), 4);
+  Serial.print('\t');
+  Serial.print(knob.getSmoothedValue(), 4);
+  Serial.print('\t');
+  Serial.println(knob.getProcessedValue(), 4);
+  
+  delay(1);
 }
