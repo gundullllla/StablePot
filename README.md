@@ -25,8 +25,10 @@ Add to your platformio.ini:
 platform = espressif32
 board = esp32dev
 framework = arduino
+monitor_speed = 115200
+
 lib_deps = 
-    https://github.com/yourusername/StablePot.git
+    https://github.com/gundullllla/StablePot.git
 
 ```
 ## Algorithm Comparison
